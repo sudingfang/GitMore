@@ -52,4 +52,7 @@ defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显�
 
     C:\Users\huangyuanzhen\.ssh>ssh-add id_rsa_company
     Identity added: id_rsa_company (id_rsa_company)
+
+
+1123
    
