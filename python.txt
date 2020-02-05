@@ -4,4 +4,4 @@ study python
 
 有没有人曾告诉你
 
-jiu更改su的文件
+这一次是jiu第一次修改su的文件
