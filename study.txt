@@ -1,0 +1,55 @@
+git init 新建一个空的仓库
+git status 查看状态
+git add . 添加文件
+git commit -m '注释' 提交添加的文件并备注说明
+git remote add origin git@github.com:jinzhaogit/git.git 连接远程仓库
+git push -u origin master 将本地仓库文件推送到远程仓库
+git log 查看变更日志
+git reset --hard 版本号前六位 回归到指定版本
+git branch 查看分支
+git branch newname 创建一个叫newname的分支
+git checkout newname 切换到叫newname的分支上
+git merge newname 把newname分支合并到当前分支上
+git pull origin master 将master分支上的内容拉到本地上
+
+
+
+1.打开“终端”，根据自己的版本选择命令
+
+2.早期的OS X（10.6~10.8）系统可以使用如下两条命令来开始或者关闭系统隐藏文件的显示：
+defaults write com.apple.Finder AppleShowAllFiles Yes && killall Finder //显示隐藏文件
+defaults write com.apple.Finder AppleShowAllFiles No && killall Finder //不显示隐藏文件
+
+3.当升级到OS X 10.9 Mavericks版本之后，这两条命令需要做一些修改，变成了如下命令：
+defaults write com.apple.finder AppleShowAllFiles Yes && killall Finder //显示隐藏文件
+defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显示隐藏文件
+
+快捷键：
+在 macOS Sierra，可以使用快捷键⌘⇧.(Command + Shift + .) 来快速（在 Finder 中）显示和隐藏隐藏文件了。
+
+作者：Fosen波波
+链接：https://www.jianshu.com/p/da862b9b0697
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+4. 更新存储的key
+在更新存储之前，我们要先检查一下本地的 OpenSSH 服务有没有开启。不然会出错。
+
+开启 ssh 服务的流程为：
+
+设置 → 管理可选功能 → 添加功能 → [OpenSSH服务器]
+计算机管理 → 服务和应用程序 → 服 务→ OpenSSH Authentication Agent&OpenSSH Server → 右击
+启动之后看到的是这样子的：
+
+开始 SSH 服务之后，我们就可以使用ssh 命令了。
+
+清除当前存储的认证：
+
+    C:\Users\huangyuanzhen>ssh-add -D
+    // All identities removed.
+增加新的keys:
+
+    C:\Users\huangyuanzhen\.ssh>ssh-add id_rsa_company
+    Identity added: id_rsa_company (id_rsa_company)
+   
