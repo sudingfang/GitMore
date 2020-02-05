@@ -3,3 +3,5 @@ study python
 
 
 有没有人曾告诉你
+
+jiu更改su的文件
